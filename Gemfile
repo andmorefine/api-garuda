@@ -22,6 +22,8 @@ gem 'grape-entity'
 gem 'grape-swagger'
 gem 'grape-swagger-entity'
 gem 'grape-swagger-rails'
+gem 'grape_logging'
+gem 'swagger-docs'
 gem 'kaminari'
 gem 'parallel'
 gem 'ransack'
@@ -50,6 +52,7 @@ group :development do
   gem 'yard'
   gem 'yard-activesupport-concern' # Rails で Concern 使う場合は必須
   gem 'redcarpet' # Option (Markdown)
+  gem 'rouge' # highlight for markdown
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
