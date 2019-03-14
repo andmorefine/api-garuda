@@ -6,7 +6,8 @@ module API
       format :json
       content_type :json, 'application/json'
 
-      mount API::V1::Proverbs
+      # mount API::V1::Proverbs
+      mount API::V1::OneHundredPeople
 
     end
   end
