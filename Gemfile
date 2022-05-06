@@ -5,9 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.2.2'
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-gem 'puma', '~> 3.7'
+ruby '2.7.5'
+
+# Default Gems
+gem 'rails', '6.0.4.7'
+gem 'mysql2'
+gem 'puma'
 
 gem 'activerecord-import'
 gem 'armg'
@@ -31,7 +34,6 @@ gem 'seed-fu'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
@@ -42,8 +44,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console'
+  gem 'listen'
   gem 'pry-rails'
   gem 'hirb'
   gem 'hirb-unicode'
