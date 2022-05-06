@@ -8,7 +8,7 @@ end
 ruby '2.7.5'
 
 # Default Gems
-gem 'rails', '6.0.4.7'
+gem 'rails', '6.0.4.8'
 gem 'mysql2'
 gem 'puma'
 
